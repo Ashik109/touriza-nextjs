@@ -1,5 +1,5 @@
-import SourceHomePage from "../components/SourceHomePage";
+import HomeFourContent from "../page-sections/home-four";
 
 export default function HomeFourPage() {
-  return <SourceHomePage fileName="index-four.html" />;
+  return <HomeFourContent />;
 }

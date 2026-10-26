@@ -1,5 +1,5 @@
-import SourceHomePage from "../components/SourceHomePage";
+import HomeThreeContent from "../page-sections/home-three";
 
 export default function HomeThreePage() {
-  return <SourceHomePage fileName="index-three.html" />;
+  return <HomeThreeContent />;
 }

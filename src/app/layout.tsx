@@ -20,6 +20,10 @@ import PreloaderController from "./components/PreloaderController";
 export const metadata: Metadata = {
   title: "Touriza | Travel Smart, Travel Better",
   description: "Discover extraordinary destinations and unforgettable journeys with Touriza.",
+  icons: {
+    icon: "/assets/images/fav.svg",
+    shortcut: "/assets/images/fav.svg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

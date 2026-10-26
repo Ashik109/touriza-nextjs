@@ -1,5 +1,5 @@
-import SourceHomePage from "../components/SourceHomePage";
+import HomeTwoContent from "../page-sections/home-two";
 
 export default function HomeTwoPage() {
-  return <SourceHomePage fileName="index-two.html" />;
+  return <HomeTwoContent />;
 }

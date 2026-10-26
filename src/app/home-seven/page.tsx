@@ -1,5 +1,5 @@
-import SourceHomePage from "../components/SourceHomePage";
+import HomeSevenContent from "../page-sections/home-seven";
 
 export default function HomeSevenPage() {
-  return <SourceHomePage fileName="index-seven.html" />;
+  return <HomeSevenContent />;
 }

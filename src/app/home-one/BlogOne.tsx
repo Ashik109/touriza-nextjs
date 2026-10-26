@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { blogDetailPath } from "../../data/details";
 
 const posts = [
   {
@@ -47,7 +48,7 @@ export default function BlogOne() {
               <div className="col-lg-4" data-aos="fade-left" data-aos-delay={post.delay} key={post.title}>
                 <div className="blog-wrapper image-transform radius-10">
                   <div className="image-area">
-                                            <Link href="/blog-details"><img className="hover-image" src={`/assets/images/blog/${post.image}`} alt="" /></Link>
+                    <Link href={blogDetailPath(post.title)}><img className="hover-image" src={`/assets/images/blog/${post.image}`} alt="" /></Link>
                   </div>
                   <div className="author-area">
                     <div className="image"><img src={`/assets/images/blog/author/${post.author}`} alt="" /></div>
@@ -62,10 +63,10 @@ export default function BlogOne() {
                       </ul>
                     </div>
                     <h5 className="blog-title">
-                                        <Link className="title-w-hover" href="/blog-details"> {post.title}</Link>
+                      <Link className="title-w-hover" href={blogDetailPath(post.title)}> {post.title}</Link>
                     </h5>
                     <ul className="tags">
-                                            {post.tags.map((tag) => <li key={tag}><Link href="/blog-details">{tag}</Link></li>)}
+                      {post.tags.map((tag) => <li key={tag}><Link href={blogDetailPath(post.title)}>{tag}</Link></li>)}
                     </ul>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { destinationDetailPath } from "../../data/details";
 
 const quickLinks = [
   ["Featured Tours", "/tour"],
@@ -58,7 +59,7 @@ export default function FooterOne() {
               <h6 className="title">Popular Location</h6>
               <ul>
                 {popularLocations.map((location) => (
-                  <li key={location}><ArrowIcon /><Link href="/destination-details">{location}</Link></li>
+                  <li key={location}><ArrowIcon /><Link href={destinationDetailPath(location)}>{location}</Link></li>
                 ))}
               </ul>
             </div>

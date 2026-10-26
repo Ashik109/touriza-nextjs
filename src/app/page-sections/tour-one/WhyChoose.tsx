@@ -1,0 +1,83 @@
+import Link from "next/link";
+
+export default function WhyChoose() {
+  return (
+  <section className="rts-why-choose-us-area rts-section-gap">
+    <div className="container">
+      <div className="section-inner">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="why-choose-left-image-area">
+              <div className="main-image radius-10" data-aos="fade-right" data-aos-delay="100">
+                <img src="/assets/images/why-choose/01.webp" width="453" alt="" />
+                <div className="content">
+                  <Link href="/" className="logo">
+                    <img src="/assets/images/logo/03.svg" alt="" />
+                  </Link>
+                  <h2 className="title">
+                    Adventure Travel
+                  </h2>
+                  <p>
+                    Trusted by thousands of travelers
+                  </p>
+                </div>
+              </div>
+              <div className="floating-image overflow-hidden radius-10" data-aos="zoom-in" data-aos-delay="400">
+                <img className="" src="/assets/images/why-choose/02.webp" width="297" alt="" data-aos="zoom-in" data-aos-delay="400" />
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div className="why-choose-right-side-content">
+              <div className="section-title-area">
+                <p className="sub-title">
+                  Why Choose Us
+                </p>
+                <h2 className="section-title mb-0">
+                  Trusted by thousands of travelers worldwide
+                </h2>
+                <p className="desc">
+                  We go the extra mile to make your travel experience smooth, safe, and unforgettable. Discover why thousands of travelers trust us for their journeys around the world."
+                </p>
+              </div>
+              <ul className="why-choose-wrapper-list">
+                <li className="radius-10">
+                  <div className="icon">
+                    <img src="/assets/images/why-choose/icon/01.svg" alt="" />
+                  </div>
+                  <div className="content">
+                    <h5 className="title">
+                      Expertly Crafted Tours
+                    </h5>
+                    <p>
+                      Handpicked packages by real travel experts
+                    </p>
+                  </div>
+                </li>
+                <li className="radius-10">
+                  <div className="icon">
+                    <img src="/assets/images/why-choose/icon/02.svg" alt="" />
+                  </div>
+                  <div className="content">
+                    <h5 className="title">
+                      24/7 Customer Support
+                    </h5>
+                    <p>
+                      Got a question or facing an issue? No worries!
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div className="button-area">
+                <Link href="/contact" className="rts-btn btn-primary">
+                  Talk to Our Team
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  );
+}

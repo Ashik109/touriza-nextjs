@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import {
+  blogDetailPath,
+  destinationDetailPath,
+  tourDetailPath,
+} from "../../data/details";
 
 const homeLinks = [
   ["Travel Agency", "/"],
@@ -19,14 +24,14 @@ const tourLinks = [
   ["Tour Three", "/tour-three"],
   ["Tour Four", "/tour-four"],
   ["Tour Five", "/tour-five"],
-  ["Tour Details", "/tour-details"],
+  ["Tour Details", tourDetailPath("The Luxury Island Hopper")],
 ];
 
 const pageLinks = [
   ["About", "/about"],
   ["Teams", "/team"],
   ["Blog", "/blog"],
-  ["Blog Details", "/blog-details"],
+  ["Blog Details", blogDetailPath("Top 10 Essential Travel Tips for First-Time Travelers")],
   ["Log In", "/sign-in"],
   ["Sign Up", "/sign-up"],
 ];
@@ -108,8 +113,8 @@ export default function HeaderOne() {
                                     <div className={`destlist${activeRegion === region ? " active" : ""}`} data-region={region} key={region}>
                                       {destinationRegions[region].map(([name, image]) => (
                                         <div className="destination-wrapper-3 radius-10 image-transform" key={name}>
-                                    <div className="image-area"><Link href="/destination-details"><img className="hover-image" src={`/assets/images/destination/${image}`} alt="" /></Link></div>
-                                    <div className="content"><h6 className="title"><Link href="/destination-details">{name}</Link></h6></div>
+                                    <div className="image-area"><Link href={destinationDetailPath(name)}><img className="hover-image" src={`/assets/images/destination/${image}`} alt="" /></Link></div>
+                                    <div className="content"><h6 className="title"><Link href={destinationDetailPath(name)}>{name}</Link></h6></div>
                                         </div>
                                       ))}
                                     </div>

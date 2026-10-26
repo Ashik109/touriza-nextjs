@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import type { SwiperOptions } from "swiper/types";
 import useSwiper from "../hooks/useSwiper";
+import { tourDetailPath } from "../../data/details";
 
 const tours = [
   ["05.webp", "$499/person", "7 Days in Bali Paradise", "Indonesia", "7 Days/6 Nights"],
@@ -35,13 +36,13 @@ export default function ToursOne() {
                 <div className="swiper-slide" key={`${title}-${index}`}>
                   <div className="tour-wrapper radius-10 image-transform">
                     <div className="image-area radius-6">
-                      <Link href="/tour-details">
+                      <Link href={tourDetailPath(title)}>
                         <img className="hover-image" src={`/assets/images/trip/${image}`} alt="" />
                         <span className="tag">{price}</span>
                       </Link>
                     </div>
                     <div className="content">
-                      <h6 className="title"><Link href="/tour-details">{title}</Link></h6>
+                      <h6 className="title"><Link href={tourDetailPath(title)}>{title}</Link></h6>
                       <ul className="meta-content">
                         <li><i className="fa-light fa-location-dot"></i> {location}</li>
                         <li><i className="fa-light fa-clock"></i> {duration}</li>
@@ -54,7 +55,7 @@ export default function ToursOne() {
                         <p className="desc">(4.8/5 from 120 reviews)</p>
                       </div>
                       <div className="button-area">
-                        <Link href="/tour-details" className="rts-btn btn-primary">View Details</Link>
+                        <Link href={tourDetailPath(title)} className="rts-btn btn-primary">View Details</Link>
                       </div>
                     </div>
                   </div>
