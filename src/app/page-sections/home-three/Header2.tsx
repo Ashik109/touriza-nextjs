@@ -53,6 +53,21 @@ export default function Header2() {
                   Summer Travel
                 </Link>
               </li>
+              <li>
+                <Link className="mobile-menu-link" href="/home-eight">
+                  Travel Agency Two
+                </Link>
+              </li>
+              <li>
+                <Link className="mobile-menu-link" href="/home-nine">
+                  Kayaking
+                </Link>
+              </li>
+              <li>
+                <Link className="mobile-menu-link" href="/home-ten">
+                  Car Camping
+                </Link>
+              </li>
             </ul>
           </li>
           <li className="has-droupdown">

@@ -50,8 +50,18 @@ export default function Header2() {
                 </Link>
               </li>
               <li>
-                <Link className="mobile-menu-link" href="/index-eight">
-                  SEO Agency
+                <Link className="mobile-menu-link" href="/home-eight">
+                  Travel Agency Two
+                </Link>
+              </li>
+              <li>
+                <Link className="mobile-menu-link" href="/home-nine">
+                  Kayaking
+                </Link>
+              </li>
+              <li>
+                <Link className="mobile-menu-link" href="/home-ten">
+                  Car Camping
                 </Link>
               </li>
             </ul>

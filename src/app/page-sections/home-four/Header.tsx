@@ -57,6 +57,21 @@ export default function Header() {
                             Summer Travel
                           </Link>
                         </li>
+                        <li className="nav-item">
+                          <Link className="nav-link page" href="/home-eight">
+                            Travel Agency Two
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link className="nav-link page" href="/home-nine">
+                            Kayaking
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link className="nav-link page" href="/home-ten">
+                            Car Camping
+                          </Link>
+                        </li>
                       </ul>
                     </li>
                     <li className="menu-item rts-has-dropdown">

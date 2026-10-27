@@ -1,6 +1,7 @@
 import "server-only";
 
 import type { DetailContent, DetailKind } from "./details";
+import { legacyDetailContent } from "./legacy-detail-content";
 
 const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
   "tour": {
@@ -647,5 +648,5 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
 };
 
 export function getDetailContent(kind: DetailKind, slug: string) {
-  return detailContent[kind][slug];
+  return detailContent[kind][slug] ?? legacyDetailContent[kind][slug];
 }

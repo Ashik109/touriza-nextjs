@@ -12,7 +12,10 @@ export default function useSwiper(elementRef: RefObject<HTMLElement | null>, opt
   useEffect(() => {
     if (!elementRef.current) return;
 
-    const swiper = new Swiper(elementRef.current, { modules, ...options });
+    const element = elementRef.current as HTMLElement & { swiper?: Swiper };
+    if (element.swiper || element.classList.contains("swiper-initialized")) return;
+
+    const swiper = new Swiper(element, { modules, ...options });
 
     return () => {
       swiper.destroy(true, true);

@@ -4,18 +4,34 @@ import { useEffect } from "react";
 
 export default function PreloaderController() {
   useEffect(() => {
+    let timeoutId = 0;
+    let pageReady = false;
+    let windowLoaded = document.readyState === "complete";
+
     const markAsLoaded = () => {
-      document.body.classList.add("loaded");
+      if (!pageReady || !windowLoaded) return;
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => document.body.classList.add("loaded"), 0);
     };
 
-    if (document.readyState === "complete") {
+    const handlePageReady = () => {
+      pageReady = true;
       markAsLoaded();
-      return;
-    }
+    };
 
-    window.addEventListener("load", markAsLoaded);
+    const handleLoad = () => {
+      windowLoaded = true;
+      markAsLoaded();
+    };
 
-    return () => window.removeEventListener("load", markAsLoaded);
+    window.addEventListener("touriza:page-ready", handlePageReady);
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.removeEventListener("touriza:page-ready", handlePageReady);
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   return null;

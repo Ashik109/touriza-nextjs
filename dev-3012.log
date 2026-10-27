@@ -1,0 +1,44 @@
+
+> touriza-next@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3012
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://127.0.0.1:3012
+- Network:       http://127.0.0.1:3012
+✓ Ready in 1179ms
+✓ Running next.config.ts took 81ms
+Creating turbopack project { dir: 'D:\\projects\\projects_2026\\touriza-next', testMode: true }
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next-debug/types/**/*.ts'
+  	- include was updated to add '.next-debug/dev/types/**/*.ts'
+
+- Cache Components enabled
+- Partial Prefetching enabled
+
+○ Compiling /home-two ...
+ GET /home-two 200 in 2.4s (next.js: 634ms, application-code: 1721ms)
+ GET /home-two 200 in 485ms (next.js: 6ms, application-code: 479ms)
+ GET /home-two 200 in 439ms (next.js: 3ms, application-code: 436ms)
+✓ Compiled in 1395ms
+ GET /home-two 200 in 1102ms (next.js: 80ms, application-code: 1022ms)
+ GET /home-two 200 in 382ms (next.js: 10ms, application-code: 372ms)
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://127.0.0.1:3012
+- Network:       http://127.0.0.1:3012
+✓ Ready in 2.1s
+✓ Running next.config.ts took 146ms
+Creating turbopack project { dir: 'D:\\projects\\projects_2026\\touriza-next', testMode: true }
+- Cache Components enabled
+- Partial Prefetching enabled
+
+○ Compiling /home-two ...
+ GET /home-two 200 in 3.1s (next.js: 1072ms, application-code: 1983ms)
+✓ Compiled in 1832ms
+✓ Compiled in 134ms
+✓ Compiled in 85ms
+✓ Compiled in 109ms
+ GET /home-two 200 in 878ms (next.js: 67ms, application-code: 811ms)
+ GET /home-two 200 in 877ms (next.js: 28ms, application-code: 848ms)

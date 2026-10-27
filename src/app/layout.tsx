@@ -15,7 +15,9 @@ import "../../public/assets/css/plugins/fontawesome-6.css";
 import "../../public/assets/css/plugins/hover-revel.css";
 import "../../public/assets/css/style.css";
 import AosController from "./components/AosController";
+import GlobalPluginScripts from "./components/GlobalPluginScripts";
 import PreloaderController from "./components/PreloaderController";
+import TourizaController from "./components/TourizaController";
 
 export const metadata: Metadata = {
   title: "Touriza | Travel Smart, Travel Better",
@@ -32,7 +34,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <PreloaderController />
         <AosController />
+        <TourizaController />
         {children}
+        <GlobalPluginScripts />
       </body>
     </html>
   );

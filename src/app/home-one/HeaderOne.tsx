@@ -16,6 +16,9 @@ const homeLinks = [
   ["Travel Africa", "/home-five"],
   ["Tour Marketplace", "/home-six"],
   ["Summer Travel", "/home-seven"],
+  ["Travel Agency Two", "/home-eight"],
+  ["Kayaking", "/home-nine"],
+  ["Car Camping", "/home-ten"],
 ];
 
 const tourLinks = [
@@ -65,7 +68,6 @@ function DropdownMenu({ links }: { links: string[][] }) {
 }
 
 export default function HeaderOne() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [activeRegion, setActiveRegion] = useState<Region>("europe");
 
   return (
@@ -81,7 +83,7 @@ export default function HeaderOne() {
                 </Link>
               </div>
 
-              <nav className="main-nav-area" style={{ display: menuOpen ? "block" : undefined }}>
+              <nav className="main-nav-area">
                 <ul className="list-unstyled rts-desktop-menu">
                   <li className="menu-item rts-has-dropdown">
                     <a className="main-element rts-dropdown-main-element" href="#">Home</a>
@@ -152,7 +154,7 @@ export default function HeaderOne() {
               <div className="menu-btn-toggle2 white">
                 <div className="eel-icon-menu-wrap"><em className="eel-icon-menu" /><em className="eel-icon-menu" /></div>
               </div>
-              <div className="menu-btn menu-btn-toggle radius-6" id="menu-btn" role="button" tabIndex={0} aria-label="Toggle menu" onClick={() => setMenuOpen((open) => !open)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") setMenuOpen((open) => !open); }}>
+              <div className="menu-btn menu-btn-toggle radius-6" id="menu-btn" role="button" tabIndex={0} aria-label="Toggle menu">
                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="14" width="20" height="2" fill="#FFFFFF" /><rect y="7" width="20" height="2" fill="#FFFFFF" /><rect width="20" height="2" fill="#FFFFFF" /></svg>
               </div>
             </div>

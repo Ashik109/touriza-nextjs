@@ -26,7 +26,7 @@ export default function DestinationDetailsContent({ detailContent }: { detailCon
       <BodyClassController className="home-bg" />
       <Preloader />
       <Header />
-      <Banner detailContent={detailContent} />
+      <Banner />
       <Destinations detailContent={detailContent} />
       <Gallery />
       <Tours />
