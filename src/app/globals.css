@@ -1,0 +1,40 @@
+html {
+  scroll-padding-top: 100px;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.contact-form-status {
+  margin: 18px 0 0;
+  font-weight: 500;
+}
+
+.contact-form-status.success {
+  color: #198754;
+}
+
+.contact-form-status.error {
+  color: #dc3545;
+}
+
+.contact-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.contact-form .contact-form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -14,9 +14,11 @@ import "../../public/assets/css/plugins/fontawesome.min.css";
 import "../../public/assets/css/plugins/fontawesome-6.css";
 import "../../public/assets/css/plugins/hover-revel.css";
 import "../../public/assets/css/style.css";
+import "./globals.css";
 import AosController from "./components/AosController";
 import GlobalPluginScripts from "./components/GlobalPluginScripts";
 import PreloaderController from "./components/PreloaderController";
+import SmoothScroll from "./components/smoothscroll";
 import TourizaController from "./components/TourizaController";
 
 export const metadata: Metadata = {
@@ -32,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
+        <SmoothScroll />
         <PreloaderController />
         <AosController />
         <TourizaController />
