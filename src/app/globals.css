@@ -108,6 +108,32 @@ html.lenis body {
   object-fit: cover;
 }
 
+.destination-banner-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2136 / 1200;
+  object-fit: cover;
+}
+
+.destination-banner .destination-banner-scrollbar {
+  position: relative;
+  inset: auto;
+  width: min(220px, 70%);
+  height: 4px;
+  margin: 14px auto 0;
+}
+
+@media (max-width: 767px) {
+  .destination-banner .banner-wrapper .image-area {
+    height: clamp(270px, 68vw, 450px);
+  }
+
+  .destination-banner .banner-wrapper .image-area img {
+    height: 100%;
+  }
+}
+
 button[data-save-tour][hidden] {
   display: none !important;
 }

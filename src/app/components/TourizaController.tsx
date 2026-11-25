@@ -12,6 +12,7 @@ import {
   Mousewheel,
   Navigation,
   Pagination,
+  Scrollbar,
 } from "swiper/modules";
 import type { SwiperOptions } from "swiper/types";
 
@@ -42,6 +43,7 @@ const swiperModules = [
   Mousewheel,
   Navigation,
   Pagination,
+  Scrollbar,
 ];
 
 function sliderScope(element: HTMLElement) {
@@ -130,15 +132,19 @@ function initializeSwipers() {
     breakpoints: { 0: { slidesPerView: 1 }, 767: { slidesPerView: 1 }, 1024: { slidesPerView: 1.5 } },
   });
 
-  create(".banner-slider-active5", {
+  create(".banner-slider-active5", (element) => ({
     slidesPerView: 2,
     speed: 2000,
     spaceBetween: 10,
     autoplay: { delay: 500, disableOnInteraction: false },
     loop: true,
     centeredSlides: true,
+    scrollbar: {
+      el: element.closest(".destination-banner")?.querySelector<HTMLElement>(".destination-banner-scrollbar"),
+      draggable: true,
+    },
     breakpoints: { 0: { slidesPerView: 1 }, 767: { slidesPerView: 1 }, 992: { slidesPerView: 1.5 } },
-  });
+  }));
 
   create(".banner-slider-active9, .banner-slider-active10", {
     slidesPerView: 1,

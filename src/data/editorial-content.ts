@@ -11,7 +11,8 @@ const destinationNotes: Record<string, string> = {
 };
 
 export function getDestinationIntro(detail: DetailContent) {
-  return destinationNotes[detail.slug] ?? `Planning a trip to ${detail.title}? Compare tour options and ask the operator about travel dates, the meeting point, and what is included in your itinerary.`;
+  const slug = detail.slug === "maldives-asia" ? "maldives" : detail.slug;
+  return destinationNotes[slug] ?? `Planning a trip to ${detail.title}? Compare tour options and ask the operator about travel dates, the meeting point, and what is included in your itinerary.`;
 }
 
 export function getArticleSections(detail: DetailContent): { heading: string; text: string }[] {

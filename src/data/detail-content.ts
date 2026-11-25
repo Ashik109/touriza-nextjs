@@ -275,7 +275,7 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
     "bali-indonesia": {
       "slug": "bali-indonesia",
       "title": "Bali, Indonesia",
-      "image": "assets//images/logo/06.svg"
+      "image": "assets/images/destination/16.webp"
     },
     "bangkok": {
       "slug": "bangkok",
@@ -325,12 +325,12 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
     "dubai-coastline": {
       "slug": "dubai-coastline",
       "title": "Dubai Coastline",
-      "image": "assets//images/logo/06.svg"
+      "image": "assets/images/destination/27.webp"
     },
     "explore-our-destination": {
       "slug": "explore-our-destination",
       "title": "Explore Our Destination",
-      "image": "assets/images/logo/07.svg"
+      "image": "assets/images/destination/11.webp"
     },
     "fiji-islands": {
       "slug": "fiji-islands",
@@ -345,7 +345,7 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
     "greek-islands": {
       "slug": "greek-islands",
       "title": "Greek Islands",
-      "image": "assets//images/logo/06.svg"
+      "image": "assets/images/destination/03.webp"
     },
     "hawaii-usa-47": {
       "slug": "hawaii-usa-47",
@@ -395,7 +395,7 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
     "maldives": {
       "slug": "maldives",
       "title": "Maldives",
-      "image": "assets//images/logo/06.svg"
+      "image": "assets/images/destination/02.webp"
     },
     "maldives-asia": {
       "slug": "maldives-asia",

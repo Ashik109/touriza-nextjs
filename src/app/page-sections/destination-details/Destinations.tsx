@@ -2,6 +2,8 @@ import { getDestinationIntro } from "@/data/editorial-content";
 import type { DetailContent } from "@/data/details";
 
 export default function Destinations({ detailContent }: { detailContent: DetailContent }) {
+  const isMaldives = ["maldives", "maldives-asia"].includes(detailContent.slug);
+
   return (
   <section className="rts-features-area destination rts-section-gapTop">
     <div className="container">
@@ -20,7 +22,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/01.svg" alt="" />
             </div>
             <h5>
-              Things to Do
+              {isMaldives ? <>World-Class <br /> Overwater Villas</> : "Things to Do"}
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="400">
@@ -28,7 +30,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/02.svg" alt="" />
             </div>
             <h5>
-              Places to Stay
+              {isMaldives ? <>Romantic &amp; <br /> Honeymoon Paradise</> : "Places to Stay"}
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="600">
