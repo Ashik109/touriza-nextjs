@@ -101,13 +101,6 @@ html.lenis body {
   border-radius: 6px;
 }
 
-.destination-cover {
-  display: block;
-  width: 100%;
-  height: clamp(280px, 42vw, 560px);
-  object-fit: cover;
-}
-
 .destination-banner-photo {
   display: block;
   width: 100%;

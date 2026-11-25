@@ -1,27 +1,29 @@
 import type { DetailContent } from "@/data/details";
 
-const maldivesSlides = [
+const templateSlides = [
   "/assets/images/banner/bg-17.webp",
   "/assets/images/banner/bg-16.webp",
   "/assets/images/banner/bg-15.webp",
 ];
 
 export default function Banner({ detailContent }: { detailContent: DetailContent }) {
-  const images = ["maldives", "maldives-asia"].includes(detailContent.slug)
-    // The centered desktop loop needs slides on both sides of the active image.
-    ? [...maldivesSlides, ...maldivesSlides]
-    : [`/${detailContent.image.replace(/^\/+/, "")}`];
+  const cover = `/${detailContent.image.replace(/^\/+/, "")}`;
+  const slides = ["maldives", "maldives-asia"].includes(detailContent.slug)
+    ? templateSlides
+    : [cover, ...templateSlides.filter(image => image !== cover)].slice(0, 3);
+  // The centered desktop loop needs slides on both sides of the active image.
+  const images = [...slides, ...slides];
 
   return (
-    <section className="rts-banner-area-seven destination-banner overflow-hidden" aria-label={`${detailContent.title} photos`}>
-      <div className={images.length > 1 ? "swiper banner-slider-active5 slider-drag-wrap" : undefined}>
-        <div className={images.length > 1 ? "swiper-wrapper" : undefined}>
+    <section className="rts-banner-area-seven destination-banner overflow-hidden" aria-label={`${detailContent.title} banner`}>
+      <div className="swiper banner-slider-active5 slider-drag-wrap">
+        <div className="swiper-wrapper">
           {images.map((image, index) => (
-            <div key={`${image}-${index}`} className={images.length > 1 ? "swiper-slide" : undefined}>
+            <div key={`${image}-${index}`} className="swiper-slide">
               <div className="banner-wrapper after-none">
                 <div className="image-area">
                   <img
-                    className={images.length === 1 ? "destination-cover" : "destination-banner-photo"}
+                    className="destination-banner-photo"
                     src={image}
                     alt={index === 0 ? detailContent.title : ""}
                     fetchPriority={index === 0 ? "high" : undefined}
@@ -32,7 +34,7 @@ export default function Banner({ detailContent }: { detailContent: DetailContent
           ))}
         </div>
       </div>
-      {images.length > 1 && <div className="swiper-scrollbar destination-banner-scrollbar" />}
+      <div className="swiper-scrollbar destination-banner-scrollbar" />
     </section>
   );
 }
