@@ -555,7 +555,6 @@ function initializeMagnificPopup() {
 
   $(".gallery-image").magnificPopup({ type: "image", gallery: { enabled: true } });
   $(".popup-youtube, .popup-video").magnificPopup({
-    disableOn: 700,
     type: "iframe",
     mainClass: "mfp-fade",
     removalDelay: 160,
@@ -569,6 +568,21 @@ function closeCustomSelects() {
     select.classList.remove("active");
     const options = select.querySelector<HTMLElement>(".custom-options");
     if (options) options.style.height = "0";
+  });
+}
+
+function savedTourPath(button: HTMLElement) {
+  const card = button.closest('[class*="package-wrapper"], .tour-wrapper, .tour-wrapper-list, .swiper-slide');
+  return card?.querySelector<HTMLAnchorElement>('a[href^="/tour/"]')?.pathname;
+}
+
+function refreshSavedTourButtons(saved: string[]) {
+  document.querySelectorAll<HTMLElement>("[data-save-tour]").forEach(button => {
+    const path = savedTourPath(button);
+    button.hidden = !path;
+    const active = Boolean(path && saved.includes(path));
+    button.setAttribute("aria-pressed", String(active));
+    button.setAttribute("aria-label", active ? "Remove saved tour" : "Save tour");
   });
 }
 
@@ -655,6 +669,11 @@ export default function TourizaController() {
 
       swipers.push(...initializeSwipers());
       initializeMagnificPopup();
+      try {
+        refreshSavedTourButtons(JSON.parse(window.localStorage.getItem("touriza-saved-tours") ?? "[]"));
+      } catch {
+        refreshSavedTourButtons([]);
+      }
       updatePriceRange();
       updateCountdowns();
 
@@ -689,11 +708,40 @@ export default function TourizaController() {
 
     const handleClick = (event: MouseEvent) => {
       const target = event.target as Element;
+      const saveButton = target.closest<HTMLElement>("[data-save-tour]");
+      if (saveButton) {
+        const path = savedTourPath(saveButton);
+        if (!path) return;
+        try {
+          const saved = JSON.parse(window.localStorage.getItem("touriza-saved-tours") ?? "[]") as string[];
+          const next = saved.includes(path) ? saved.filter(item => item !== path) : [...saved, path];
+          window.localStorage.setItem("touriza-saved-tours", JSON.stringify(next));
+          refreshSavedTourButtons(next);
+        } catch {
+          saveButton.setAttribute("aria-label", "Tour could not be saved");
+        }
+        return;
+      }
+      const searchLink = target.closest<HTMLAnchorElement>("a[data-tour-search]");
+      if (searchLink && !event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey) {
+        const url = new URL(searchLink.href);
+        const scope = searchLink.closest(".form-area, .advance__search__section") ?? searchLink.parentElement?.parentElement;
+        const fields = ["destination", "activity", "duration", "budget"];
+        scope?.querySelectorAll<HTMLElement>(".custom-select").forEach((select, index) => {
+          const field = fields[index];
+          const value = select.dataset.searchValue;
+          if (field && value) url.searchParams.set(field, value);
+        });
+        event.preventDefault();
+        window.location.assign(url);
+        return;
+      }
+
       const customSelect = target.closest<HTMLElement>(".custom-select");
       const customTrigger = target.closest<HTMLElement>(".custom-select-trigger");
       const customOption = target.closest<HTMLElement>(".custom-select .option");
 
-      if (customSelect && (customTrigger || customOption)) {
+      if (customSelect && !customSelect.hasAttribute("data-react-select") && (customTrigger || customOption)) {
         event.stopPropagation();
         const options = customSelect.querySelector<HTMLElement>(".custom-options");
         if (!options) return;
@@ -710,6 +758,7 @@ export default function TourizaController() {
         const input = customSelect.querySelector<HTMLInputElement>('input[type="hidden"]');
         if (!customOption || !trigger || !input) return;
         trigger.textContent = customOption.textContent;
+        customSelect.dataset.searchValue = customOption.textContent?.trim();
         input.value = customOption.dataset.value ?? "";
         options.querySelectorAll(".option").forEach((option) => option.classList.remove("selected"));
         customOption.classList.add("selected");
@@ -778,7 +827,10 @@ export default function TourizaController() {
       }
 
       const itineraryTitle = target.closest<HTMLElement>(".itinerary-title");
-      if (itineraryTitle) itineraryTitle.closest(".itinerary-item")?.classList.toggle("active");
+      if (itineraryTitle) {
+        const active = itineraryTitle.closest(".itinerary-item")?.classList.toggle("active");
+        itineraryTitle.setAttribute("aria-expanded", String(Boolean(active)));
+      }
 
       const filterButton = target.closest<HTMLButtonElement>(".filters-button-group button[data-filter]");
       if (filterButton) {
@@ -808,8 +860,9 @@ export default function TourizaController() {
     const handleChange = (event: Event) => {
       const target = event.target as HTMLInputElement;
       if (!target.matches("#expandAll, #expandAll2")) return;
-      document.querySelectorAll(".itinerary-item").forEach((item) => {
+      target.closest(".itinerary-area")?.querySelectorAll(".itinerary-item").forEach((item) => {
         item.classList.toggle("active", target.checked);
+        item.querySelector(".itinerary-title")?.setAttribute("aria-expanded", String(target.checked));
       });
     };
 

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="left">
           <div className="single-footer-widget-one logo-area">
             <Link href="/" className="logo">
-              <img className="light" src="/assets//images/logo/06.svg" alt="logo" />
+              <img className="light" src="/assets/images/logo/06.svg" alt="logo" />
             </Link>
             <p className="desc">
               Touriza Yachting &amp; Travel Co. 
@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <ul className="get-in-touch">
               <li>
-                <a href="#">
+                <a href="tel:+971551234567">
                   Phone: +971 55 123 4567
                 </a>
               </li>
@@ -149,7 +149,7 @@ export default function Footer() {
               <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#FFFFFF"></path>
               </svg>
-              <Link href="/contact">
+              <Link href="/booking-guide">
                 Booking Guide
               </Link>
             </li>
@@ -157,7 +157,7 @@ export default function Footer() {
               <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#FFFFFF"></path>
               </svg>
-              <Link href="/contact">
+              <Link href="/privacy-policy">
                 Privacy Policy
               </Link>
             </li>
@@ -165,7 +165,7 @@ export default function Footer() {
               <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 0L6.75 5L0.5 10V0Z" fill="#FFFFFF"></path>
               </svg>
-              <Link href="/contact">
+              <Link href="/contact#faq">
                 FAQs
               </Link>
             </li>
@@ -176,12 +176,8 @@ export default function Footer() {
             Get App
           </h6>
           <div className="get-btn-area">
-            <a href="#">
-              <img src="/assets/images/footer/app-01.svg" alt="" />
-            </a>
-            <a href="#">
-              <img src="/assets/images/footer/app-02.svg" alt="" />
-            </a>
+
+
           </div>
           <div className="review-area">
             <ul>
@@ -213,24 +209,24 @@ export default function Footer() {
             </p>
             <ul>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-01.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-02.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-03.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-04.svg" alt="" />
-                </a>
+                </span>
               </li>
             </ul>
           </div>

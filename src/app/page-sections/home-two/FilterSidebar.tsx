@@ -21,7 +21,7 @@ export default function FilterSidebar() {
         </div>
         <div className="gallery-image-area">
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/06.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/06.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/06.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -29,7 +29,7 @@ export default function FilterSidebar() {
             </a>
           </div>
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/07.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/07.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/07.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -37,7 +37,7 @@ export default function FilterSidebar() {
             </a>
           </div>
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/08.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/08.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/08.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -45,7 +45,7 @@ export default function FilterSidebar() {
             </a>
           </div>
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/09.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/09.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/09.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -53,7 +53,7 @@ export default function FilterSidebar() {
             </a>
           </div>
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/10.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/10.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/10.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -61,7 +61,7 @@ export default function FilterSidebar() {
             </a>
           </div>
           <div className="gallery-wrapper with-icon">
-            <a href="assets/images/gallery/12.webp" className="gallery-image image-transform">
+            <a href="/assets/images/gallery/12.webp" className="gallery-image image-transform">
               <img className="hover-image" src="/assets/images/gallery/11.webp" width="190" alt="" />
               <span className="icon">
                 <img src="/assets/images/gallery/insta.svg" alt="" />
@@ -76,25 +76,25 @@ export default function FilterSidebar() {
           <div className="wrapper">
             <div className="single">
               <i className="fas fa-phone-alt" style={{ "fontFamily": "\"Font Awesome 6 Pro\", Bangla867, sans-serif" } as CSSProperties}></i>
-              <a href="#">
+              <a href="tel:+8801234566789">
                 +8801234566789
               </a>
             </div>
             <div className="single">
               <i className="fas fa-envelope" style={{ "fontFamily": "\"Font Awesome 6 Pro\", Bangla867, sans-serif" } as CSSProperties}></i>
-              <a href="#">
+              <a href="mailto:example@gmail.com">
                 example@gmail.com
               </a>
             </div>
             <div className="single">
               <i className="fas fa-globe" style={{ "fontFamily": "\"Font Awesome 6 Pro\", Bangla867, sans-serif" } as CSSProperties}></i>
-              <a href="#">
+              <a href="/contact">
                 www.webexample.com
               </a>
             </div>
             <div className="single">
               <i className="fas fa-map-marker-alt" style={{ "fontFamily": "\"Font Awesome 6 Pro\", Bangla867, sans-serif" } as CSSProperties}></i>
-              <a href="#">
+              <a href="/contact#location">
                 13/A, New Pro State, NYC
               </a>
             </div>
@@ -105,26 +105,6 @@ export default function FilterSidebar() {
             Follow Us
           </h4>
           <ul>
-            <li>
-              <a href="#" aria-label="Facebook">
-                <i className="fab fa-facebook-f" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="twitter">
-                <i className="fab fa-twitter" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="instagram">
-                <i className="fab fa-instagram" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="linkdin">
-                <i className="fa-brands fa-linkedin-in" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-              </a>
-            </li>
           </ul>
         </div>
       </div>

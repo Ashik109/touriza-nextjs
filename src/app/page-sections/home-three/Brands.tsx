@@ -6,37 +6,37 @@ export default function Brands() {
         <div className="swiper-wrapper">
           <div className="swiper-slide">
             <div className="image-area">
-              <a href="#">
+              <span>
                 <img src="/assets/images/brand/01.svg" alt="" />
-              </a>
+              </span>
             </div>
           </div>
           <div className="swiper-slide">
             <div className="image-area">
-              <a href="#">
+              <span>
                 <img src="/assets/images/brand/02.svg" alt="" />
-              </a>
+              </span>
             </div>
           </div>
           <div className="swiper-slide">
             <div className="image-area">
-              <a href="#">
+              <span>
                 <img src="/assets/images/brand/03.svg" alt="" />
-              </a>
+              </span>
             </div>
           </div>
           <div className="swiper-slide">
             <div className="image-area">
-              <a href="#">
+              <span>
                 <img src="/assets/images/brand/04.svg" alt="" />
-              </a>
+              </span>
             </div>
           </div>
           <div className="swiper-slide">
             <div className="image-area">
-              <a href="#">
+              <span>
                 <img src="/assets/images/brand/05.svg" alt="" />
-              </a>
+              </span>
             </div>
           </div>
         </div>

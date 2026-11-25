@@ -1,3 +1,4 @@
+import DemoForm from "@/app/components/DemoForm";
 import Link from "next/link";
 
 export default function SignIn() {
@@ -15,35 +16,27 @@ export default function SignIn() {
       <h4 className="title">
         Sign In
       </h4>
-      <form action="#">
+      <p>Account form demo. Use sample details.</p>
+      <DemoForm mode="sign-in">
         <div className="single-input-wrapper">
-          <label htmlFor="femail">
+          <label htmlFor="account-field-1">
             Email*
           </label>
-          <input type="email" name="email" placeholder="Your email address" required />
+          <input id="account-field-1" type="email" name="email" placeholder="Your email address" required />
         </div>
         <div className="single-input-wrapper">
-          <label htmlFor="fname">
+          <label htmlFor="account-field-2">
             Password
           </label>
-          <input type="password" name="password" placeholder="Enter your password" required />
+          <input id="account-field-2" type="password" name="password" placeholder="Enter your password" required />
         </div>
-        <div className="single-input-area d-flex align-items-center justify-content-between">
-          <label className="checkbox-label">
-            <input type="checkbox" />
-            <span>
-              Remember me
-            </span>
-          </label>
-          <a href="#" className="forgot-btn">
-            Forgot your password?
-          </a>
-        </div>
+        <Link href="/forgot-password" className="forgot-btn">Forgot your password?</Link>
         <button type="submit" className="rts-btn btn-primary m-w-100 text-center justify-content-center with-arrow">
           Sign In 
           <i className="fa-regular fa-arrow-up up-right"></i>
         </button>
-      </form>
+      </DemoForm>
+      <Link href="/sign-up">New to Touriza? Sign up</Link>
     </div>
   </div>
   );

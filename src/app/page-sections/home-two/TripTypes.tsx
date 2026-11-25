@@ -23,7 +23,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Ice%20Hiking">
                       Ice Hiking
                     </a>
                   </h5>
@@ -40,7 +40,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Glacier%20Trekking">
                       Glacier Trekking
                     </a>
                   </h5>
@@ -57,7 +57,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Snow%20Camping">
                       Snow Camping
                     </a>
                   </h5>
@@ -74,7 +74,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Ice%20Wall%20Climbing">
                       Ice Wall Climbing
                     </a>
                   </h5>
@@ -91,7 +91,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Glacier%20Trekking">
                       Glacier Trekking
                     </a>
                   </h5>
@@ -108,7 +108,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Snow%20Camping">
                       Snow Camping
                     </a>
                   </h5>
@@ -125,7 +125,7 @@ export default function TripTypes() {
                 </div>
                 <div className="content">
                   <h5 className="title">
-                    <a href="#">
+                    <a href="/search?kind=tour&amp;q=Ice%20Wall%20Climbing">
                       Ice Wall Climbing
                     </a>
                   </h5>

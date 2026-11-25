@@ -24,24 +24,24 @@ export default function Team() {
                 </Link>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -65,24 +65,24 @@ export default function Team() {
                 </Link>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -106,24 +106,24 @@ export default function Team() {
                 </Link>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -147,24 +147,24 @@ export default function Team() {
                 </Link>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>

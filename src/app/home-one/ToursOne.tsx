@@ -49,8 +49,8 @@ export default function ToursOne() {
                       </ul>
                       <div className="star-rating-area">
                         <ul className="stars">
-                          {[0, 1, 2, 3].map((star) => <li key={star}><a href="#"><i className="fa-solid fa-star"></i></a></li>)}
-                          <li><a href="#"><i className="fa-regular fa-star"></i></a></li>
+                          {[0, 1, 2, 3].map((star) => <li key={star}><span><i className="fa-solid fa-star"></i></span></li>)}
+                          <li><span><i className="fa-regular fa-star"></i></span></li>
                         </ul>
                         <p className="desc">(4.8/5 from 120 reviews)</p>
                       </div>

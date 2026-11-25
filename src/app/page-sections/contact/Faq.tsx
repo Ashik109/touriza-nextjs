@@ -1,6 +1,6 @@
 export default function Faq() {
   return (
-  <section className="rts-faq-area rts-section-gapTop">
+  <section id="faq" className="rts-faq-area rts-section-gapTop">
     <div className="container">
       <div className="section-inner">
         <div className="row g-5">
@@ -26,7 +26,7 @@ export default function Faq() {
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                       <div className="accordion-body">
-                         Our studio provides a wide range of creative services, including design, branding, web development, graphic design, and video production. 
+                         Introductory kayaking trips include a safety briefing and basic paddling instruction. Check the tour description for its experience requirements.
                       </div>
                     </div>
                   </div>
@@ -38,7 +38,7 @@ export default function Faq() {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div className="accordion-body">
-                         Our studio provides a wide range of creative services, including design, branding, web development, graphic design, and video production. 
+                         Tell your guide if you cannot swim before booking. Ask whether the route is suitable for you and what flotation equipment is provided.
                       </div>
                     </div>
                   </div>
@@ -50,7 +50,7 @@ export default function Faq() {
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div className="accordion-body">
-                         Our studio provides a wide range of creative services, including design, branding, web development, graphic design, and video production. 
+                         Bring quick-drying clothes, water, sun protection and a dry bag for essentials. Your trip guide can confirm what equipment is included.
                       </div>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export default function Faq() {
                     </h2>
                     <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div className="accordion-body">
-                         Our studio provides a wide range of creative services, including design, branding, web development, graphic design, and video production. 
+                         Guides check conditions before departure. If a trip cannot run safely, contact the operator about rescheduling and the cancellation terms.
                       </div>
                     </div>
                   </div>

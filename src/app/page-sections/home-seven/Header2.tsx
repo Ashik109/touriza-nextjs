@@ -160,26 +160,6 @@ export default function Header2() {
       </nav>
       <div className="follow-us">
         <ul>
-          <li>
-            <a href="#" aria-label="Facebook">
-              <i className="fab fa-facebook-f" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="twitter">
-              <i className="fab fa-twitter" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="instagram">
-              <i className="fab fa-instagram" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="linkdin">
-              <i className="fa-brands fa-linkedin-in" style={{ "fontFamily": "\"Font Awesome 6 Brands\", Bangla867, sans-serif" } as CSSProperties}></i>
-            </a>
-          </li>
         </ul>
       </div>
     </div>

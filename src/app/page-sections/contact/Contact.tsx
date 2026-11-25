@@ -72,11 +72,11 @@ export default function Contact() {
               </div>
               <p className="desc">
                 Please read our 
-                <a href="#">
+                <a href="/privacy-policy">
                    privacy policy
                 </a>
                  and 
-                <a href="#">
+                <a href="/cookies-policy">
                   Cookies policy
                 </a>
                  so you understand how we collect and use your personal data.
@@ -133,7 +133,7 @@ export default function Contact() {
               <p className="disc">
                  Our customer support team is available 
               </p>
-              <a href="#">
+              <a href="tel:+111112542174">
                 +1 (111) 125- 42174
               </a>
             </div>

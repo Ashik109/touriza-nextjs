@@ -20,7 +20,7 @@ export default function BrandOne() {
             {brands.map((brand) => (
               <div className="swiper-slide" key={brand}>
                 <div className="image-area">
-                  <a href="#"><img src={`/assets/images/brand/${brand}`} alt="" /></a>
+                  <span><img src={`/assets/images/brand/${brand}`} alt="" /></span>
                 </div>
               </div>
             ))}

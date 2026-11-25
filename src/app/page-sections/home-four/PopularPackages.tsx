@@ -33,9 +33,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/05.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -75,9 +75,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/06.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -117,9 +117,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/07.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -159,9 +159,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/08.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -201,9 +201,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/05.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -243,9 +243,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/06.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -285,9 +285,9 @@ export default function PopularPackages() {
                     <img className="hover-image" src="/assets/images/package/07.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>

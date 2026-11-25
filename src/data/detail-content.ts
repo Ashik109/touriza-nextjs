@@ -650,3 +650,7 @@ const detailContent: Record<DetailKind, Record<string, DetailContent>> = {
 export function getDetailContent(kind: DetailKind, slug: string) {
   return detailContent[kind][slug] ?? legacyDetailContent[kind][slug];
 }
+
+export function listDetailContent(kind: DetailKind) {
+  return Object.values({ ...legacyDetailContent[kind], ...detailContent[kind] });
+}

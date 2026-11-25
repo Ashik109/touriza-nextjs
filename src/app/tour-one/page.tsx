@@ -1,5 +1,5 @@
-import TourOneContent from "../page-sections/tour-one";
+import { redirect } from "next/navigation";
 
 export default function TourOnePage() {
-  return <TourOneContent />;
+  redirect("/tour");
 }

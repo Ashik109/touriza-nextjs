@@ -1,8 +1,9 @@
+import ListingControls from "@/app/components/ListingControls";
 import Link from "next/link";
 
 export default function Blog() {
   return (
-  <section className="rts-blog-area inner rts-section-gap">
+  <section data-demo-listing className="rts-blog-area inner rts-section-gap">
     <div className="container">
       <div className="section-inner">
         <div className="row g-5">
@@ -47,12 +48,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Train%20Journey">
                             Train Journey
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Railway">
                             Railway
                           </a>
                         </li>
@@ -98,12 +99,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Mountain">
                             Mountain
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Travel">
                             Travel
                           </a>
                         </li>
@@ -149,12 +150,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Train%20Journey">
                             Train Journey
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Railway">
                             Railway
                           </a>
                         </li>
@@ -200,12 +201,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Train%20Journey">
                             Train Journey
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Railway">
                             Railway
                           </a>
                         </li>
@@ -251,12 +252,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Mountain">
                             Mountain
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Travel">
                             Travel
                           </a>
                         </li>
@@ -302,12 +303,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Train%20Journey">
                             Train Journey
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Railway">
                             Railway
                           </a>
                         </li>
@@ -353,12 +354,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Train%20Journey">
                             Train Journey
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Railway">
                             Railway
                           </a>
                         </li>
@@ -404,12 +405,12 @@ export default function Blog() {
                       </h5>
                       <ul className="tags">
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Mountain">
                             Mountain
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="/search?kind=blog&amp;q=Travel">
                             Travel
                           </a>
                         </li>
@@ -418,30 +419,7 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <div className="rts-course-pagination-area mt--50">
-                <ul>
-                  <li>
-                    <button className="active">
-                      01
-                    </button>
-                  </li>
-                  <li>
-                    <button>
-                      02
-                    </button>
-                  </li>
-                  <li>
-                    <button>
-                      03
-                    </button>
-                  </li>
-                  <li>
-                    <button>
-                      <i className="fa-regular fa-chevron-right"></i>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+              <ListingControls kind="blog" />
             </div>
           </div>
           <div className="col-lg-4">
@@ -451,76 +429,17 @@ export default function Blog() {
                   <h6>
                     Touriza Search
                   </h6>
-                  <form action="#">
+                  <form action="/search" method="get">
+                    <input type="hidden" name="kind" value="blog" />
                     <div className="input-wrapper">
-                      <input type="text" placeholder="Search Here..." required />
-                      <button type="submit">
+                      <input type="search" name="q" aria-label="Search travel stories" placeholder="Search Here..." required />
+                      <button type="submit" aria-label="Search">
                         <i className="fa-regular fa-magnifying-glass"></i>
                       </button>
                     </div>
                   </form>
                 </div>
-                <div className="destination side-box">
-                  <h6>
-                    Destination
-                  </h6>
-                  <ul className="checkbox-list">
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" defaultChecked />
-                        <span>
-                          Nepal
-                        </span>
-                      </label>
-                    </li>
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" />
-                        <span>
-                          Maldives
-                        </span>
-                      </label>
-                    </li>
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" />
-                        <span>
-                          Greek Island
-                        </span>
-                      </label>
-                    </li>
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" />
-                        <span>
-                          New York
-                        </span>
-                      </label>
-                    </li>
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" />
-                        <span>
-                          Indonesia
-                        </span>
-                      </label>
-                    </li>
-                    <li className="checkbox-item">
-                      <label className="checkbox-label">
-                        <input type="checkbox" />
-                        <span>
-                          Dubai Coastline
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
-                  <a href="#" className="btn">
-                    Show More
-                  </a>
-                  <span className="cross">
-                    <i className="fa-regular fa-chevron-up"></i>
-                  </span>
-                </div>
+
                 <div className="blog-post side-box">
                   <h6>
                     Recent Post

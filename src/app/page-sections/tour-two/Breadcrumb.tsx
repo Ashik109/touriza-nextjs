@@ -13,15 +13,15 @@ export default function Breadcrumb() {
           <span>
             <i className="fa-regular fa-chevron-right"></i>
           </span>
-          <a href="#" className="current">
+          <span className="current" aria-current="page">
             Tours
-          </a>
+          </span>
           <span>
             <i className="fa-regular fa-chevron-right"></i>
           </span>
-          <a href="#" className="current">
+          <span className="current" aria-current="page">
             Nature Friendly
-          </a>
+          </span>
         </div>
         <h1 className="title">
           Adventure &amp; Nature

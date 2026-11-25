@@ -9,6 +9,7 @@ import parse, {
 } from "html-react-parser";
 import BodyClassController from "./BodyClassController";
 import ThemeScripts from "./ThemeScripts";
+import DemoForm from "./DemoForm";
 
 type LegacyHomePageProps = {
   bodyClass: string;
@@ -17,7 +18,11 @@ type LegacyHomePageProps = {
 
 const parserOptions: HTMLReactParserOptions = {
   replace(domNode) {
-    if (!(domNode instanceof Element) || domNode.name !== "a") return;
+    if (!(domNode instanceof Element)) return;
+    if (domNode.name === "form" && "data-demo-newsletter" in domNode.attribs) {
+      return <DemoForm mode="newsletter">{domToReact(domNode.children as DOMNode[], parserOptions)}</DemoForm>;
+    }
+    if (domNode.name !== "a" || "data-tour-search" in domNode.attribs) return;
 
     const href = domNode.attribs.href;
     if (!href?.startsWith("/") || href.startsWith("/assets/") || href.startsWith("//")) return;

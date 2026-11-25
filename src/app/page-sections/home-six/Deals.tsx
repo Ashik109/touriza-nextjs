@@ -29,9 +29,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/19.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   20% Off
                 </span>
@@ -82,9 +82,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/20.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   40% Off
                 </span>
@@ -135,9 +135,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/21.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   10% Off
                 </span>
@@ -188,9 +188,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/22.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   30% Off
                 </span>
@@ -241,9 +241,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/19.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>
@@ -291,9 +291,9 @@ export default function Deals() {
                     <img className="hover-image" src="/assets/images/package/20.webp" alt="" />
                   </Link>
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <div className="content">
                   <ul className="meta-content">
                     <li>

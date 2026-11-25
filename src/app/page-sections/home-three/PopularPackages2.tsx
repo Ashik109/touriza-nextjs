@@ -31,9 +31,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/01.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   30% OFF
                 </span>
@@ -64,9 +64,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/03.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   20% OFF
                 </span>
@@ -97,9 +97,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/02.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   40% OFF
                 </span>
@@ -130,9 +130,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/04.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   30% OFF
                 </span>
@@ -163,9 +163,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/01.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   30% OFF
                 </span>
@@ -196,9 +196,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/03.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   20% OFF
                 </span>
@@ -229,9 +229,9 @@ export default function PopularPackages2() {
                 <div className="image-area">
                   <img className="hover-image" src="/assets/images/package/02.webp" alt="" />
                 </div>
-                <a href="#" className="wishlist">
+                <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                   <i className="fa-light fa-heart"></i>
-                </a>
+                </button>
                 <span className="tag">
                   40% OFF
                 </span>

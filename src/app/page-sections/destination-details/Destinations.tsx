@@ -1,3 +1,4 @@
+import { getDestinationIntro } from "@/data/editorial-content";
 import type { DetailContent } from "@/data/details";
 
 export default function Destinations({ detailContent }: { detailContent: DetailContent }) {
@@ -9,7 +10,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
           {detailContent.title}
         </h1>
         <p className="desc">
-           Embark on an unforgettable journey from the vibrant city of Cape Town to the wild heart of Kruger National Park. This destination offers the perfect blend of scenic landscapes, rich cultural experiences, and thrilling wildlife adventures. From iconic Table Mountain and golden beaches to Big Five safaris and starlit bush dinners, this route captures the very essence of South Africa’s diverse beauty. 
+           {getDestinationIntro(detailContent)}
         </p>
       </div>
       <div className="section-inner mt--60">
@@ -19,9 +20,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/01.svg" alt="" />
             </div>
             <h5>
-              World-Class 
-              <br />
-               Overwater Villas
+              Things to Do
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="400">
@@ -29,9 +28,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/02.svg" alt="" />
             </div>
             <h5>
-              Romantic &amp; 
-              <br />
-               Honeymoon Paradise
+              Places to Stay
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="600">
@@ -39,9 +36,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/03.svg" alt="" />
             </div>
             <h5>
-              Visa-Friendly 
-              <br />
-               Destination
+              Entry Requirements
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="800">
@@ -49,9 +44,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/04.svg" alt="" />
             </div>
             <h5>
-              English 
-              <br />
-               Language
+              Local Guides
             </h5>
           </li>
           <li className="" data-aos="zoom-in" data-aos-delay="1000">
@@ -59,9 +52,7 @@ export default function Destinations({ detailContent }: { detailContent: DetailC
               <img src="/assets/images/feature/05.svg" alt="" />
             </div>
             <h5>
-              Greenwich Mean 
-              <br />
-               Time (GMT)
+              Best Time to Travel
             </h5>
           </li>
         </ul>

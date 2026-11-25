@@ -85,7 +85,7 @@ type SearchFieldProps = (typeof fields)[number] & {
 
 function SearchField({ label, value, name, options, selectedValue, open, onToggle, onSelect }: SearchFieldProps) {
   return (
-    <div className={`custom-select${open ? " active" : ""}`}>
+    <div data-react-select data-search-value={selectedValue === value ? undefined : selectedValue} className={`custom-select${open ? " active" : ""}`}>
       <p className="tag">{label}</p>
       <span className="icon" aria-hidden="true"><FieldIcon name={name} /></span>
       <span className="dropdown-icon" aria-hidden="true"><DropdownIcon /></span>
@@ -133,7 +133,7 @@ export default function BannerOne() {
         <div className="form-area">
           {fields.map((field) => <SearchField key={field.name} {...field} selectedValue={selectedValues[field.name]} open={openField === field.name} onToggle={() => setOpenField(openField === field.name ? null : field.name)} onSelect={(option) => selectValue(field.name, option)} />)}
           <div className="button-area">
-            <a href="#tours" className="rts-btn btn-primary"><SearchIcon />Search</a>
+            <a href="/search?kind=tour" data-tour-search className="rts-btn btn-primary"><SearchIcon />Search</a>
           </div>
         </div>
       </div>

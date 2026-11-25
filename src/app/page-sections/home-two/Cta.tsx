@@ -18,7 +18,7 @@ export default function Cta() {
                   30% OFF!
                 </span>
               </h2>
-              <a href="#" className="rts-btn btn-primary with-arrow" data-aos="fade-up" data-aos-delay="600">
+              <a href="/tour" className="rts-btn btn-primary with-arrow" data-aos="fade-up" data-aos-delay="600">
                 Book Now 
                 <i className="fa-regular fa-arrow-up up-right"></i>
               </a>

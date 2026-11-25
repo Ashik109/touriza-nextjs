@@ -14,9 +14,9 @@ export default function Breadcrumb({ detailContent }: { detailContent: DetailCon
           <span>
             <i className="fa-regular fa-chevron-right"></i>
           </span>
-          <a href="#" className="current">
+          <span className="current" aria-current="page">
             Blog
-          </a>
+          </span>
         </div>
         <h1 className="title">
           {detailContent.title}

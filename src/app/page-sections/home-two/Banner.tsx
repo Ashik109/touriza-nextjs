@@ -37,7 +37,7 @@ export default function Banner() {
                       Explore breathtaking destinations, handpicked tour packages, and seamless travel experiences — all in one place.
                     </p>
                     <div className="button-area">
-                      <a href="#" className="rts-btn btn-primary">
+                      <a href="/tour" className="rts-btn btn-primary">
                         Explore Tours
                       </a>
                       <Link href="/tour" className="rts-btn btn-primary btn-border">
@@ -58,7 +58,7 @@ export default function Banner() {
                       Explore breathtaking destinations, handpicked tour packages, and seamless travel experiences — all in one place.
                     </p>
                     <div className="button-area">
-                      <a href="#" className="rts-btn btn-primary">
+                      <a href="/tour" className="rts-btn btn-primary">
                         Explore Tours
                       </a>
                       <Link href="/tour" className="rts-btn btn-primary btn-border">

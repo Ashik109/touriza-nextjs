@@ -1,3 +1,5 @@
+import DemoForm from "@/app/components/DemoForm";
+
 export default function Newsletter() {
   return (
   <section className="rts-newsletter-area tour-marketplace">
@@ -11,12 +13,12 @@ export default function Newsletter() {
             <p className="desc">
               Subscribe to receive exclusive Travel deals, travel and the latest updates straight to your inbox.
             </p>
-            <form className="newsletter-form" action="#">
-              <input type="email" name="email" placeholder="Email Address" required />
+            <DemoForm mode="newsletter" className="newsletter-form">
+              <input type="email" name="email" aria-label="Email address" placeholder="Email Address" required />
               <button type="submit" className="rts-btn btn-primary">
                 Subscribe
               </button>
-            </form>
+            </DemoForm>
           </div>
           <div className="map">
             <img src="/assets/images/cta/map-3.svg" alt="" />

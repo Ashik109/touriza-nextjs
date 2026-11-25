@@ -220,7 +220,7 @@ export default function Banner() {
               <input type="hidden" name="child" defaultValue="1" />
             </div>
             <div className="button-area">
-              <a href="#" className="rts-btn btn-primary">
+              <a href="/search?kind=tour" data-tour-search className="rts-btn btn-primary">
                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0_964_5526)">
                     <path d="M18.171 16.0839L14.6871 12.5986C17.2939 9.115 16.5831 4.17775 13.0996 1.57096C9.61598 -1.03583 4.67873 -0.325041 2.07194 3.15854C-0.534851 6.64212 0.175936 11.5794 3.65952 14.1862C6.45782 16.2802 10.3012 16.2802 13.0996 14.1862L16.5849 17.6715C17.0229 18.1095 17.733 18.1095 18.171 17.6715C18.609 17.2335 18.609 16.5234 18.171 16.0854L18.171 16.0839ZM8.40858 13.5135C5.31254 13.5135 2.80273 11.0036 2.80273 7.90761C2.80273 4.81157 5.31254 2.30176 8.40858 2.30176C11.5046 2.30176 14.0144 4.81157 14.0144 7.90761C14.0111 11.0022 11.5033 13.5102 8.40858 13.5135Z" fill="white"></path>

@@ -34,9 +34,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/23.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -79,9 +79,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/24.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -124,9 +124,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/25.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -174,9 +174,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/26.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -224,9 +224,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/23.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -274,9 +274,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/24.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -324,9 +324,9 @@ export default function Tours() {
                       <img className="hover-image" src="/assets/images/package/25.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>

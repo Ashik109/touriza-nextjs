@@ -5,17 +5,14 @@ export default function Header() {
   <header className="header-style-one header--sticky header-seven p-0">
     <div className="header-top">
       <p className="desc">
-         Best in Travel is here! 
-        <a href="#">
-          Discover 2025’s Destinations
-        </a>
+        Best in Travel is here! <Link href="/destination">Explore Destinations</Link>
       </p>
     </div>
     <div className="header-mid">
       <div className="container">
         <div className="inner">
-          <form className="form-area">
-            <input type="search" name="search" placeholder="Search..." />
+          <form className="form-area" action="/search" method="get">
+            <input type="search" name="q" aria-label="Search Touriza" placeholder="Search..." required />
             <button type="submit" aria-label="Submit search">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.4569 13.1588L11.6066 10.3074C13.7393 7.45732 13.1578 3.41797 10.3078 1.28526C7.45776 -0.847448 3.41844 -0.265928 1.28574 2.58412C-0.846955 5.43416 -0.265438 9.4735 2.58459 11.6062C4.87397 13.3194 8.01838 13.3194 10.3078 11.6062L13.1592 14.4577C13.5176 14.816 14.0986 14.816 14.4569 14.4577C14.8152 14.0994 14.8152 13.5184 14.4569 13.1601L14.4569 13.1588ZM6.46995 11.0559C3.93698 11.0559 1.88363 9.00249 1.88363 6.4695C1.88363 3.93652 3.93698 1.88315 6.46995 1.88315C9.00292 1.88315 11.0563 3.93652 11.0563 6.4695C11.0536 9.00134 9.0018 11.0532 6.46995 11.0559Z" fill="#797979"></path>
@@ -29,72 +26,8 @@ export default function Header() {
           </div>
           <div className="right-button-area">
             <div className="right-information">
-              <ul className="rts-dropdown-menu switcher-language">
-                <li className="has-child-menu">
-                  <a href="#">
-                    <span className="menu-item">
-                      English
-                    </span>
-                    <i className="fa-regular fa-chevron-down"></i>
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Deutsch
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Portuguese
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Russian
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <ul className="rts-dropdown-menu switcher-currency">
-                <li className="has-child-menu">
-                  <a href="#">
-                    <span className="menu-item">
-                      USD
-                    </span>
-                    <i className="fa-regular fa-chevron-down"></i>
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Euro
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Real
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Ruble
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+
+
             </div>
           </div>
         </div>

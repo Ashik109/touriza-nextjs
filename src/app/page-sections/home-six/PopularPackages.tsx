@@ -70,9 +70,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/15.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -120,9 +120,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/16.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -170,9 +170,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/17.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -220,9 +220,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/18.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -270,9 +270,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/19.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -320,9 +320,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/20.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -370,9 +370,9 @@ export default function PopularPackages() {
                       <img className="hover-image" src="/assets/images/package/21.webp" alt="" />
                     </Link>
                   </div>
-                  <a href="#" className="wishlist">
+                  <button type="button" className="wishlist" data-save-tour aria-label="Save tour" aria-pressed="false">
                     <i className="fa-light fa-heart"></i>
-                  </a>
+                  </button>
                   <div className="content">
                     <ul className="meta-content">
                       <li>
@@ -416,7 +416,7 @@ export default function PopularPackages() {
               <div className="flash grid-item-p element-item transition yacht safari col-xl-3 col-lg-4 col-md-6 col-sm-6" data-category="transition">
                 <div className="package-wrapper4 radius-10 image-transform">
                   <div className="image-area image-transform">
-                    <a href="#">
+                    <a href="/tour/greek-island-hopping-sail">
                       <img className="hover-image" src="/assets/images/package/22.webp" alt="" />
                     </a>
                   </div>

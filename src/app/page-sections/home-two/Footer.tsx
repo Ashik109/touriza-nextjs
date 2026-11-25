@@ -1,3 +1,4 @@
+import DemoForm from "@/app/components/DemoForm";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,8 +8,8 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="left">
           <div className="single-footer-widget-one logo-area">
-            <a href="#" className="logo">
-              <img className="light" src="/assets//images/logo/04.svg" alt="logo" />
+            <a href="/" className="logo">
+              <img className="light" src="/assets/images/logo/04.svg" alt="logo" />
             </a>
             <p className="desc">
               We take care of every detail you can travel with confidence ease.
@@ -22,37 +23,13 @@ export default function Footer() {
                   Call Us 24/7
                 </p>
                 <h5>
-                  <a className="cp" href="call-to:25621452156">
+                  <a className="cp" href="tel:+25621452156">
                     (+256) 2145 2156
                   </a>
                 </h5>
               </div>
             </div>
-            <ul className="social-area">
-              <li>
-                Follow Us -
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-            </ul>
+
           </div>
         </div>
         <div className="mid d-flex justify-content-center">
@@ -160,12 +137,12 @@ export default function Footer() {
               <p className="desc">
                 Subscribe to our newsletter
               </p>
-              <form action="#">
-                <input type="email" placeholder="Email address.." required />
+              <DemoForm mode="newsletter">
+                <input type="email" placeholder="Email address.." required name="email" aria-label="Email address" />
                 <button className="rts-btn btn-primary border">
                   Subscribe
                 </button>
-              </form>
+              </DemoForm>
             </div>
           </div>
         </div>
@@ -183,24 +160,24 @@ export default function Footer() {
             </p>
             <ul>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-01.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-02.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-03.svg" alt="" />
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#">
+                <span>
                   <img src="/assets/images/others/payment-04.svg" alt="" />
-                </a>
+                </span>
               </li>
             </ul>
           </div>

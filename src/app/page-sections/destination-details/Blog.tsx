@@ -17,7 +17,7 @@ export default function Blog() {
           </p>
         </div>
         <div className="button-area mb--15" data-aos="fade-left" data-aos-delay="200">
-          <a href="#" className="rts-btn btn-primary btn-border with-arrow">
+          <a href="/blog" className="rts-btn btn-primary btn-border with-arrow">
             View All 
             <i className="fa-regular fa-arrow-up up-right"></i>
           </a>
@@ -63,12 +63,12 @@ export default function Blog() {
                 </h5>
                 <ul className="tags">
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Train%20Journey">
                       Train Journey
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Railway">
                       Railway
                     </a>
                   </li>
@@ -114,12 +114,12 @@ export default function Blog() {
                 </h5>
                 <ul className="tags">
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Mountain">
                       Mountain
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Travel">
                       Travel
                     </a>
                   </li>
@@ -165,12 +165,12 @@ export default function Blog() {
                 </h5>
                 <ul className="tags">
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Train%20Journey">
                       Train Journey
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="/search?kind=blog&amp;q=Railway">
                       Railway
                     </a>
                   </li>

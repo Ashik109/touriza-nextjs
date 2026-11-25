@@ -11,7 +11,7 @@ export default function Destinations() {
           </h2>
         </div>
         <div className="button-area mb--15" data-aos="fade-left" data-aos-delay="200">
-          <a href="#" className="rts-btn text-btn with-arrow">
+          <a href="/destination" className="rts-btn text-btn with-arrow">
             Explore More 
             <i className="fa-regular fa-arrow-up up-right"></i>
           </a>

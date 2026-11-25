@@ -1,21 +1,23 @@
 "use client";
 
 import Script from "next/script";
+import { useState } from "react";
 
 export default function GlobalPluginScripts() {
+  const [jqueryReady, setJqueryReady] = useState(false);
   const handlePluginsReady = () => {
     window.dispatchEvent(new Event("touriza:plugins-ready"));
   };
 
   return (
     <>
-      <Script src="/assets/js/plugins/jquery.min.js" strategy="afterInteractive" />
+      <Script src="/assets/js/plugins/jquery.min.js" strategy="afterInteractive" onReady={() => setJqueryReady(true)} />
       <Script src="/assets/js/plugins/bootstrap.min.js" strategy="afterInteractive" />
-      <Script
+      {jqueryReady && <Script
         src="/assets/js/plugins/magnific-popup.js"
         strategy="afterInteractive"
         onReady={handlePluginsReady}
-      />
+      />}
     </>
   );
 }

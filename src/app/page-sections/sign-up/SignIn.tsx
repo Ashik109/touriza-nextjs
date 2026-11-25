@@ -1,3 +1,4 @@
+import DemoForm from "@/app/components/DemoForm";
 import Link from "next/link";
 
 export default function SignIn() {
@@ -15,18 +16,19 @@ export default function SignIn() {
       <h4 className="title">
         Sign Up
       </h4>
-      <form action="#">
+      <p>Account form demo. Use sample details.</p>
+      <DemoForm mode="sign-up">
         <div className="single-input-wrapper">
-          <label htmlFor="fname">
+          <label htmlFor="account-field-1">
             First Name*
           </label>
-          <input type="text" name="name" placeholder="Your first name" required />
+          <input id="account-field-1" type="text" name="name" placeholder="Your first name" required />
         </div>
         <div className="single-input-wrapper">
-          <label htmlFor="fname">
+          <label htmlFor="account-field-2">
             Last Name*
           </label>
-          <input type="text" name="name" placeholder="Your last name" required />
+          <input id="account-field-2" type="text" name="name" placeholder="Your last name" required />
         </div>
         <div className="single-input-wrapper">
           <label htmlFor="fmail">
@@ -35,27 +37,18 @@ export default function SignIn() {
           <input type="email" name="email" placeholder="Your email address" required />
         </div>
         <div className="single-input-wrapper">
-          <label htmlFor="fname">
+          <label htmlFor="account-field-3">
             Password
           </label>
-          <input type="password" name="password" placeholder="Enter your password" required />
+          <input id="account-field-3" type="password" name="password" placeholder="Enter your password" required />
         </div>
-        <div className="single-input-area d-flex align-items-center justify-content-between">
-          <label className="checkbox-label">
-            <input type="checkbox" />
-            <span>
-              Remember me
-            </span>
-          </label>
-          <a href="#" className="forgot-btn">
-            Forgot your password?
-          </a>
-        </div>
+
         <button type="submit" className="rts-btn btn-primary m-w-100 text-center justify-content-center with-arrow">
-          Sign In 
+          Sign Up
           <i className="fa-regular fa-arrow-up up-right"></i>
         </button>
-      </form>
+      </DemoForm>
+      <Link href="/sign-in">Already registered? Sign in</Link>
     </div>
   </div>
   );

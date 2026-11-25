@@ -569,7 +569,7 @@ export default function Header() {
                 </ul>
               </nav>
               <div className="button-area-start">
-                <Link href="/free-audit" className="rts-btn btn-primary btn-secondary">
+                <Link href="/tour" className="rts-btn btn-primary btn-secondary">
                   Book Now
                 </Link>
                 <div className="menu-btn menu-btn-toggle radius-6" id="menu-btn">

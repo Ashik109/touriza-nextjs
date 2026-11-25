@@ -46,29 +46,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -112,29 +112,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -178,29 +178,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -244,29 +244,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -310,29 +310,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -376,29 +376,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">
@@ -442,29 +442,29 @@ export default function Tours() {
                   <div className="star-rating-area">
                     <ul className="stars">
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-solid fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                       <li>
-                        <a href="#">
+                        <span>
                           <i className="fa-regular fa-star"></i>
-                        </a>
+                        </span>
                       </li>
                     </ul>
                     <p className="desc">

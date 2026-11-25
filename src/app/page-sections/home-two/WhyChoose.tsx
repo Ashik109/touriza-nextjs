@@ -21,7 +21,7 @@ export default function WhyChoose() {
                 <p className="desc">
                   We don’t just offer trips — we deliver unforgettable, safe, and professionally guided ice mountain adventures.
                 </p>
-                <a href="#" className="rts-btn btn-secondary">
+                <a href="/tour" className="rts-btn btn-secondary">
                   Explore Packages
                 </a>
               </div>

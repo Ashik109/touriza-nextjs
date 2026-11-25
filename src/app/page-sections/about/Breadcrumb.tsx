@@ -13,9 +13,9 @@ export default function Breadcrumb() {
           <span>
             <i className="fa-regular fa-chevron-right"></i>
           </span>
-          <a href="#" className="current">
+          <span className="current" aria-current="page">
             About
-          </a>
+          </span>
         </div>
         <h1 className="title">
           ABOUT US

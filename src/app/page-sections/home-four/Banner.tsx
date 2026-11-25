@@ -42,26 +42,6 @@ export default function Banner() {
         <li>
            Follow Us - 
         </li>
-        <li>
-          <a href="#">
-            <i className="fa-brands fa-facebook-f"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
       </ul>
     </div>
   </div>

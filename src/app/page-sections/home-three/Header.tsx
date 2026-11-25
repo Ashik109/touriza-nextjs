@@ -8,102 +8,17 @@ export default function Header() {
         <div className="left">
           <p className="desc cb">
             Best in Travel is here! 
-            <Link href="/destinations">
+            <Link href="/destination">
               Discover 2025’s Destinations
             </Link>
           </p>
         </div>
         <div className="right">
-          <ul className="social-area">
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
+
           <div className="header-utility">
             <div className="right-information">
-              <ul className="rts-dropdown-menu switcher-language">
-                <li className="has-child-menu">
-                  <a href="#">
-                    <span className="menu-item">
-                      English
-                    </span>
-                    <i className="fa-regular fa-chevron-down"></i>
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Deutsch
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Portuguese
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Russian
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <ul className="rts-dropdown-menu switcher-currency">
-                <li className="has-child-menu">
-                  <a href="#">
-                    <span className="menu-item">
-                      USD
-                    </span>
-                    <i className="fa-regular fa-chevron-down"></i>
-                  </a>
-                  <ul className="sub-menu">
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Euro
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Real
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="menu-item">
-                          Ruble
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+
+
             </div>
           </div>
         </div>

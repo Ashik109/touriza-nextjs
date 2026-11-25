@@ -17,37 +17,37 @@ export default function Team() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="team-wrapper image-transform radius-10" data-aos="fade-left" data-aos-delay="400">
               <div className="image-area image-transform radius-6">
-                <a href="#">
+                <span>
                   <img className="hover-image" src="/assets/images/team/01.webp" alt="" />
-                </a>
+                </span>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="content">
                 <h6>
-                  <a href="#">
+                  <span>
                     Nadia Singh
-                  </a>
+                  </span>
                 </h6>
                 <p>
                   Lead Wildlife
@@ -58,37 +58,37 @@ export default function Team() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="team-wrapper image-transform radius-10" data-aos="fade-left" data-aos-delay="600">
               <div className="image-area image-transform radius-6">
-                <a href="#">
+                <span>
                   <img className="hover-image" src="/assets/images/team/02.webp" alt="" />
-                </a>
+                </span>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="content">
                 <h6>
-                  <a href="#">
+                  <span>
                     Carlos Mendes
-                  </a>
+                  </span>
                 </h6>
                 <p>
                   Jungle Expedition
@@ -99,37 +99,37 @@ export default function Team() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="team-wrapper image-transform radius-10" data-aos="fade-left" data-aos-delay="800">
               <div className="image-area image-transform radius-6">
-                <a href="#">
+                <span>
                   <img className="hover-image" src="/assets/images/team/03.webp" alt="" />
-                </a>
+                </span>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="content">
                 <h6>
-                  <a href="#">
+                  <span>
                     Tenzing Dorje
-                  </a>
+                  </span>
                 </h6>
                 <p>
                   Mountain Trek
@@ -140,37 +140,37 @@ export default function Team() {
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="team-wrapper image-transform radius-10" data-aos="fade-left" data-aos-delay="1000">
               <div className="image-area image-transform radius-6">
-                <a href="#">
+                <span>
                   <img className="hover-image" src="/assets/images/team/04.webp" alt="" />
-                </a>
+                </span>
                 <ul className="social-wrapper">
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/01.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/02.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/03.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                   <li>
-                    <a href="#">
+                    <span>
                       <img src="/assets/images/team/icon/04.svg" alt="" />
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className="content">
                 <h6>
-                  <a href="#">
+                  <span>
                     Jackson Reed
-                  </a>
+                  </span>
                 </h6>
                 <p>
                   Lead Wildlife
