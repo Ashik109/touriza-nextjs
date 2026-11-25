@@ -157,3 +157,9 @@ button[data-save-tour][aria-pressed="true"] {
 .tour-overview-panel p {
   margin-bottom: 0;
 }
+
+.banner-slider-active4 .banner-wrapper .image-area img {
+  width: 100%;
+  aspect-ratio: 1270 / 760;
+  object-fit: cover;
+}

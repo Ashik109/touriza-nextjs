@@ -1,6 +1,6 @@
 export default function DragCursor() {
   return (
-  <div className="slider-drag-cursor">
+  <div className="slider-drag-cursor" aria-hidden="true">
     <i className="fas fa-angle-left me-2"></i>
      DRAG 
     <i className="fas fa-angle-right ms-2"></i>

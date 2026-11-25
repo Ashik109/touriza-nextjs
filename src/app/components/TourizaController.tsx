@@ -968,5 +968,64 @@ export default function TourizaController() {
     };
   }, [pathname]);
 
+  useEffect(() => {
+    let cursor: HTMLElement | null = null;
+
+    let frame = 0;
+    let x = 0;
+    let y = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    function hide() {
+      cursor?.classList.remove("active");
+      window.cancelAnimationFrame(frame);
+      frame = 0;
+    }
+
+    function move() {
+      if (!cursor) return;
+      x += (targetX - x) * 0.15;
+      y += (targetY - y) * 0.15;
+      cursor.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      frame = Math.abs(targetX - x) + Math.abs(targetY - y) > 0.5
+        ? window.requestAnimationFrame(move)
+        : 0;
+    }
+
+    function handlePointer(event: PointerEvent) {
+      const target = event.target instanceof Element ? event.target : null;
+      const slider = target?.closest(".banner-slider-active4.slider-drag-wrap, .destination-banner .slider-drag-wrap");
+      if (event.pointerType !== "mouse" || !slider || target?.closest("a, button")) {
+        hide();
+        return;
+      }
+
+      if (!cursor?.isConnected) cursor = document.querySelector<HTMLElement>(".slider-drag-cursor");
+      if (!cursor) return;
+
+      targetX = event.clientX;
+      targetY = event.clientY;
+      if (!cursor.classList.contains("active")) {
+        x = targetX;
+        y = targetY;
+        cursor.classList.add("active");
+        move();
+      } else if (!frame) {
+        frame = window.requestAnimationFrame(move);
+      }
+    }
+
+    document.addEventListener("pointermove", handlePointer);
+    document.documentElement.addEventListener("pointerleave", hide);
+    window.addEventListener("blur", hide);
+    return () => {
+      document.removeEventListener("pointermove", handlePointer);
+      document.documentElement.removeEventListener("pointerleave", hide);
+      window.removeEventListener("blur", hide);
+      hide();
+    };
+  }, [pathname]);
+
   return null;
 }
